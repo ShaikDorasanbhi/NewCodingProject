@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript function</h1>
+    <h2>The forEach() method</h2>
+    <p>ForEach() calls a function for each elements in an array:</p>
+    <p>Multiply the value of each elements with 10.</p>
+    <p id="demo"></p>
+    <script>
+        const numbers=[23,34,56];
+        numbers.forEach(myfunction)
+        document.getElementById("demo").innerHTML=numbers;
+        function myfunction(item,index,arr){
+            arr[index]=item*10;
+        }
+    </script>
+</body>
+</html>

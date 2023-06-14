@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p>Compute a new array with the full name of each persons firstName and lastName.</p>
+    <p id="demo"></p>
+    <script>
+       const persons=[
+        {firstName:"Dora",lastName:"Shaik"},
+        {firstName:"Sanbhi",lastName:"Shaik"},
+        {firstName:"Dorasanbhi",lastName:"Shaik"}
+       ];
+        document.getElementById("demo").innerHTML=persons.map(getFullName);
+        function getFullName(item){
+            return [item.firstName,item.lastName].join(" ");
+        }
+    </script>
+</body>
+</html>
